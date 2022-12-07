@@ -1,0 +1,262 @@
+{
+  "orders": [
+    {
+      "userid": 1,
+      "prodid": 1,
+      "size": "M",
+      "name": "CSK",
+      "category": "tshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0481/5280/5529/products/46ebc071-5aa1-42d9-a41d-4f9c67c61cc0_c063abdf-0239-4b6f-a4d7-74ec673a4b8f_1024x1024.jpg?v=1600146312",
+      "description": "CSK",
+      "qty": 1,
+      "price": "5000",
+      "orderdate": "2020-10-14",
+      "deliverydate": "2020-10-14",
+      "status": "inprogress",
+      "address": "Address",
+      "id": 1
+    },
+    {
+      "userid": 1,
+      "prodid": 1,
+      "size": "M",
+      "name": "CSK",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4px6kw0/kids-t-shirt/y/y/y/9-10-years-ipl-jersey-uniq-original-imafeqmhrgq8kmnc.jpeg?q=50",
+      "description": "chennai Super Kings",
+      "qty": 2,
+      "price": "1000",
+      "id": 2,
+      "orderdate": "2021-03-08",
+      "deliverydate": "2021-03-18",
+      "status": "Order Placed",
+      "address": "Chennai"
+    },
+    {
+      "userid": 3,
+      "prodid": 8,
+      "size": "M",
+      "name": "SRH",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k572gsw0/kids-t-shirt/t/b/w/8-9-years-sunrisershyd-uniq-original-imafnk2ax8ybze2f.jpeg?q=50",
+      "description": "Sunrisers Hyderabad",
+      "qty": 10,
+      "price": "4000",
+      "id": 3,
+      "orderdate": "2021-03-08",
+      "deliverydate": "2021-03-18",
+      "status": "Order Placed",
+      "address": "Chennai"
+    },
+    {
+      "userid": 1,
+      "prodid": 2,
+      "size": "M",
+      "name": "RCB",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/800/960/kgmla4w0/kids-t-shirt/9/v/j/5-6-years-rcbredjersey-rjm-original-imafwtwr6zfgfqhr.jpeg?q=50",
+      "description": "Royal Challengers Bangalore",
+      "qty": 2,
+      "price": "200",
+      "id": 4,
+      "orderdate": "2021-03-09",
+      "deliverydate": "2021-03-19",
+      "status": "Order Placed",
+      "address": "Chennai"
+    },
+    {
+      "userid": 1,
+      "prodid": 1,
+      "size": "M",
+      "name": "CSK",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/495/594/k58hwnk0/kids-t-shirt/u/v/2/15-16-years-chennaisuperking-7bp-uniq-original-imafksq9n8pthj98.jpeg?q=50",
+      "description": "chennai Super Kings",
+      "qty": 2,
+      "price": "1000",
+      "id": 5,
+      "orderdate": "2021-03-09",
+      "deliverydate": "2021-03-19",
+      "status": "Order Placed",
+      "address": "Chennai"
+    },
+    {
+      "userid": 1,
+      "prodid": 1,
+      "size": "M",
+      "name": "CSK",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/495/594/k58hwnk0/kids-t-shirt/u/v/2/15-16-years-chennaisuperking-7bp-uniq-original-imafksq9n8pthj98.jpeg?q=50",
+      "description": "chennai Super Kings",
+      "qty": 1,
+      "price": "500",
+      "id": 6,
+      "orderdate": "2021-03-09",
+      "deliverydate": "2021-03-19",
+      "status": "Order Placed",
+      "address": "Chennai"
+    }
+  ],
+  "checkout": [
+    {
+      "userid": 2,
+      "prodid": 2,
+      "size": "M",
+      "name": "RCB",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/800/960/kgmla4w0/kids-t-shirt/9/v/j/5-6-years-rcbredjersey-rjm-original-imafwtwr6zfgfqhr.jpeg?q=50",
+      "description": "Royal Challengers Bangalore",
+      "qty": 2,
+      "price": "200",
+      "id": 1
+    },
+    {
+      "userid": 2,
+      "prodid": 3,
+      "size": "M",
+      "name": "RR",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4x2du80/kids-t-shirt/u/w/k/18-24-months-kidrrtop-izon-original-imafnpyfkqpajxgy.jpeg?q=50",
+      "description": "Rajasthan Royals",
+      "qty": 1,
+      "price": "150",
+      "id": 2
+    },
+    {
+      "userid": 2,
+      "prodid": "5",
+      "size": "M",
+      "name": "KKR",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4x2du80/kids-t-shirt/a/9/n/15-16-years-kidkkrtop-izon-original-imafnpyydwxjzc3m.jpeg?q=50",
+      "description": "Kolkata Knight Riders",
+      "qty": 2,
+      "price": "400",
+      "id": 3
+    },
+    {
+      "userid": 2,
+      "prodid": 6,
+      "size": "M",
+      "name": "DD",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k547l3k0/kids-t-shirt/x/5/t/11-12-years-dc-topjers-uniq-original-imafnk3zpaabswfs.jpeg?q=50",
+      "description": "Delhi Capitals",
+      "qty": 3,
+      "price": "990",
+      "id": 4
+    },
+    {
+      "userid": 2,
+      "prodid": 7,
+      "size": "M",
+      "name": "KIX",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4px6kw0/kids-t-shirt/y/y/y/9-10-years-ipl-jersey-uniq-original-imafeqmhrgq8kmnc.jpeg?q=50",
+      "description": "Kings xi Punjab",
+      "qty": 3,
+      "price": "900",
+      "id": 5
+    }
+  ],
+  "userdata": [
+    {
+      "name": "Sridhar",
+      "id": 1,
+      "type": "admin",
+      "password": "Sridhar123"
+    },
+    {
+      "name": "YUVASHREE",
+      "password": "12345",
+      "type": "User",
+      "id": 2
+    },
+    {
+      "name": "DILEEP",
+      "password": "1234567890",
+      "type": "ADMIN",
+      "id": 3
+    }
+  ],
+  "checkout1": [
+    {
+      "id": 1,
+      "userid": "1",
+      "prodid": "1",
+      "size": "xl",
+      "name": "CSK",
+      "price": "5000",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/495/594/k58hwnk0/kids-t-shirt/u/v/2/15-16-years-chennaisuperking-7bp-uniq-original-imafksq9n8pthj98.jpeg?q=50",
+      "description": "CSK",
+      "qty": 2
+    }
+  ],
+  "t-shirts": [
+    {
+      "name": "CSK",
+      "price": "500",
+      "id": 1,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/495/594/k58hwnk0/kids-t-shirt/u/v/2/15-16-years-chennaisuperking-7bp-uniq-original-imafksq9n8pthj98.jpeg?q=50",
+      "description": "chennai Super Kings"
+    },
+    {
+      "name": "RCB",
+      "price": "100",
+      "id": 2,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/800/960/kgmla4w0/kids-t-shirt/9/v/j/5-6-years-rcbredjersey-rjm-original-imafwtwr6zfgfqhr.jpeg?q=50",
+      "description": "Royal Challengers Bangalore"
+    },
+    {
+      "name": "RR",
+      "price": "150",
+      "id": 3,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4x2du80/kids-t-shirt/u/w/k/18-24-months-kidrrtop-izon-original-imafnpyfkqpajxgy.jpeg?q=50",
+      "description": "Rajasthan Royals"
+    },
+    {
+      "name": "MI",
+      "price": "450",
+      "id": 4,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/kfwvcsw0/kids-t-shirt/x/w/h/6-7-years-mi2020plainnew-uniq-original-imafw9v7rercn5hk.jpeg?q=50",
+      "description": "Mumbai Indians"
+    },
+    {
+      "id": "5",
+      "name": "KKR",
+      "price": "200",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4x2du80/kids-t-shirt/a/9/n/15-16-years-kidkkrtop-izon-original-imafnpyydwxjzc3m.jpeg?q=50",
+      "description": "Kolkata Knight Riders",
+      "category": "tshirt"
+    },
+    {
+      "name": "DD",
+      "price": "330",
+      "id": 6,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k547l3k0/kids-t-shirt/x/5/t/11-12-years-dc-topjers-uniq-original-imafnk3zpaabswfs.jpeg?q=50",
+      "description": "Delhi Capitals"
+    },
+    {
+      "name": "KIX",
+      "price": "300",
+      "id": 7,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k4px6kw0/kids-t-shirt/y/y/y/9-10-years-ipl-jersey-uniq-original-imafeqmhrgq8kmnc.jpeg?q=50",
+      "description": "Kings xi Punjab"
+    },
+    {
+      "name": "SRH",
+      "price": "400",
+      "id": 8,
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/493/592/k572gsw0/kids-t-shirt/t/b/w/8-9-years-sunrisershyd-uniq-original-imafnk2ax8ybze2f.jpeg?q=50",
+      "description": "Sunrisers Hyderabad"
+    }
+  ]
+}

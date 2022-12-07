@@ -1,0 +1,20 @@
+<section id="products">
+  <div class="container">
+    <div class="products-header">
+      <h2>popular products</h2>
+      <p>All IPL jerseys</p>
+    </div>
+    <div class="product product-1" *ngFor="let item of allProducts | async" (click)="datas(item.id)">
+      <figure> <img [src]="item.image" alt="product-image">
+        <figcaption>{{item.name}}</figcaption>
+        <figcaption>{{item.price}} Rs.</figcaption>
+      </figure>
+  
+    </div>
+  </div>
+</section> 
+
+
+
+
+<!-- <a routerLinkActive="active" class="list-group-item list-group-item-action" [routerLink]="['/product', item.id]"  (click)="!!datas(item.id)" > {{ item.name }}</a>  -->

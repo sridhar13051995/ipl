@@ -1,0 +1,40 @@
+<div class="card">
+    <div class="card-header">
+      {{isEdit == true ? 'Edit': 'Add'}} Product Details    
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Product Name</label>
+          <input type="text" class="form-control" [(ngModel)]="prodDet.name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Price</label>
+          <input type="text" class="form-control"  [(ngModel)]="prodDet.price">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Image</label>
+          <input type="text" class="form-control"  [(ngModel)]="prodDet.image">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Description</label>
+          <input type="textarea" class="form-control"  [(ngModel)]="prodDet.description">
+        </div>
+        <div class="form-group">
+          <label>Category</label>
+          <select name="s12" id="s12"  [(ngModel)]="prodDet.category" class="form-control">
+            <option selected value="tshirt">T-SHIRT</option>
+            <option value="shirt" >SHIRT</option>
+            <option value="pants" >PANTS</option>
+        </select>
+        </div>
+       
+        <div class="form-group" style="margin-bottom: 0;" *ngIf="isEdit">
+          <button class="btn btn-success" (click) = "update()"><i class="fa fa-check"></i>  Update Product</button>           
+        </div>
+        <div class="form-group" style="margin-bottom: 0;" *ngIf="!isEdit">
+          <button class="btn btn-success" (click) = "AddProduct()"><i class="fa fa-check"></i>  Add Product </button> 
+        </div>        
+      </blockquote>
+    </div>
+</div>

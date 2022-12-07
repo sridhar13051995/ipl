@@ -1,0 +1,26 @@
+<div class="container"> 
+    <form [formGroup]="prodForm" (ngSubmit)="addData()">
+        <div class="form-group">
+            <label>Id</label>
+            <input 
+            id='id' class="form-control" formControlName="id"/>
+        </div>
+        <div class="form-group">
+            <label>Name</label>
+            <input 
+            id='name' class="form-control" formControlName="name"/>
+        </div>
+        
+        <button class="btn btn-primary px-5" type="submit">Add</button>
+        <button class="btn btn-primary px-5" type="button" (click)="editData()">Edit</button>
+        <button class="btn btn-primary px-5" type="button" (click)="deleteData()">Delete</button>
+    </form>
+
+    <div *ngFor="let item of allProducts | async">
+        {{item.name}}
+    </div>
+
+    
+
+    
+</div>

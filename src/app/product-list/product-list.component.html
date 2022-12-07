@@ -1,0 +1,38 @@
+<div class="col-md-12 p-3" >
+    <button class="btn btn-light" [disabled] = "addProduct" (click)= "Add()"><i class="fa fa-plus"></i> Add Product </button>
+</div> 
+<table class="table" style="margin-top: 20px">
+    <thead style="background-color: black;border-color: black;color: white;">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Del</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let prodListitem of prodList; index as i"
+            [ngStyle]="{backgroundColor: i % 2  ? 'lightGrey' : 'darkGrey'}">
+            <td *ngIf= "!prodListitem.editable">{{prodListitem.name}} </td>
+            <td *ngIf= "!prodListitem.editable">{{prodListitem.price}} </td>
+
+            <td *ngIf= "prodListitem.editable"><input type="text" class="form-control" [(ngModel)]="prodListitem.name"> </td>
+            <td *ngIf="prodListitem.editable"><input type="text" class="form-control" [(ngModel)]="prodListitem.price"> </td> 
+            <td><button class="btn" [disabled] = "editMode || addProduct " (click)="delete(prodListitem)"><i class="fa fa-trash"></i></button></td>
+            <td>
+                <button class="btn" [disabled] = "(editMode && !prodListitem.editable) || addProduct" [ngClass]="{'btn-success': prodListitem.editable, 'btn-info': !prodListitem.editable, 'third': false}" (click)="edit(prodListitem)">{{prodListitem.editable ? 'Save' : 'Edit'}}</button> &nbsp;
+                <button class="btn btn-danger" *ngIf= "prodListitem.editable" (click)="cancel(prodListitem.id)">Cancel</button>
+            </td>
+        </tr>
+        <tr *ngIf = "addProduct" [ngStyle]="{backgroundColor: prodList.length % 2  ? 'lightGrey' : 'darkGrey'}">
+            <td><input type="text" class="form-control" [(ngModel)]="prodListnew.name"> </td>
+            <td><input type="text" class="form-control" [(ngModel)]="prodListnew.price"> </td>             
+            <td><button class="btn"><i class="fa fa-ban"></i></button></td>
+            <td><button class="btn btn-success" (click)="AddProduct(prodListnew)">Add</button> &nbsp;
+                <button class="btn btn-danger" (click)="addProduct = !addProduct">Cancel</button></td>
+        </tr>  
+    </tbody>
+  </table>
+  <div class="col-md-12" style="text-align: center;height: 350px;"  *ngIf="loading">
+    <div class="spinner-border text-light" style="width: 5rem; height: 5rem;" role="status">
+   </div>

@@ -1,0 +1,29 @@
+<section id="products">
+  <div class="container" *ngIf="!hasData">
+    <div class="products-header">
+      <h2>No Orders Placed</h2>      
+    </div>
+  </div>
+    <div class="container" *ngIf="hasData">
+      <div class="products-header">
+        <h2>Orders Placed</h2>
+        
+      </div>
+      <div class="product product-1" *ngFor="let item of allProducts | async" (click)="datas(item.prodid)">
+        <figure> <img [src]="item.image" alt="product-image">
+          <figcaption>Product Name: {{item.name}}</figcaption>
+          <figcaption>Order Placed On: {{item.orderdate}}</figcaption>
+          <figcaption>Delivery Date: {{item.deliverydate}}</figcaption>
+          <figcaption>Size: {{item.size}}</figcaption>
+          <figcaption>Quanity: {{item.qty}}</figcaption>
+        </figure>
+        
+      </div>
+    </div>
+  </section> 
+  
+  
+  
+  
+  <!-- <a routerLinkActive="active" class="list-group-item list-group-item-action" [routerLink]="['/product', item.id]"  (click)="!!datas(item.id)" > {{ item.name }}</a>  -->
+  

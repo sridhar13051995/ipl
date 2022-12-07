@@ -1,0 +1,46 @@
+
+<!-- 
+<div class="card" >
+    <div class="card-header">
+      Product Details
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <br>
+         <h3 style="font-family: fantasy;color:darkslategrey">
+          Product ID: {{prodDet.id}} <br>
+          Product Name: {{prodDet.name}} <br>
+          Product Price: {{prodDet.price}} <br>   
+          Product Category: {{prodDet.category}} <br>   
+          Product Description: {{prodDet.description}} <br>   
+          Product Image: <img [src]="prodDet.image" alt="Trulli" width="100" height="100"> <br>   
+        </h3> 
+       
+       
+        <div class="pt-4" >
+            <button (click)="edit()" class="btn btn-success"> <i class="fa fa-pencil"></i> Edit Product</button>
+            <button style="margin-left: 5px;" class="btn btn-danger" (click) = "delete()"> <i class="fa fa-trash"></i> Delete Product</button>
+        </div>
+      </blockquote>
+    </div>
+</div> -->
+
+
+
+<div class="w3-container" style="width: 50%;float: right;padding: 25px;background-color: lightblue;">
+  <div class="panel-body"><button (click)="edit()" class="btn btn-success"> <i class="fa fa-pencil"></i> Edit Product</button>
+    <button style="margin-left: 5px;" class="btn btn-danger" (click) = "delete()"> <i class="fa fa-trash"></i> Delete Product</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;margin-top: -110px;" *ngIf="prodDet?.id" >
+  <img [src]="prodDet.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-weight: bolder;">{{prodDet.name}}</h5>
+    <p class="card-text">{{prodDet.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><b>Price - </b>{{prodDet.price}} Rs.</li>
+    <li class="list-group-item"><b>Category - </b>{{prodDet.category}}</li>
+  </ul>
+</div>
+

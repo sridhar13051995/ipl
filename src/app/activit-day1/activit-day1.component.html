@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- (ngSubmit)="AddEmployee(profileForm,firstName)" -->
+            <form autocomplete="on" #profileForm="ngForm"  style="margin-top:20px"(ngSubmit)="AddEmployee(profileForm)" >
+
+                <div class="form-group">
+                    <label class="font-weight-bold" for="Employee">Employee Name</label>
+                    <input type="text"  name="firstName" class="form-control" id="Employee"
+                        placeholder="Enter First Name" ngModel required                        
+                        #firstName="ngModel">
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold"  for="Exp">Number of Years Of Experience</label>
+                    <input type="text"   name="experience" class="form-control" id="Exp"
+                        placeholder="Enter Experience" ngModel required pattern="^[0-9]*$" #experience="ngModel">
+                </div>
+
+                <div class="form-group">
+                    <label class="font-weight-bold"  for="EType">Employee Type</label>
+                    <select name="s1" id="s1"  name="type" class="form-control" ngModel required #type="ngModel">
+                        <option value="Regular">Regular</option>
+                        <option value="Contract">Contract</option>
+                    </select>
+
+
+                </div>
+                <div class="form-group"> <button type="submit" class="form-group btn btn-light"
+                        [disabled]="!profileForm.valid"><i class="fa fa-plus"></i> Add Employee</button></div>
+ 
+                <div class="form-group alert alert-danger" role="alert"
+                    *ngIf="firstName.invalid && (firstName.dirty || firstName.touched) && firstName.errors.required">
+                    Name is required.
+                    
+                </div>
+                <div class="form-group alert alert-danger" role="alert"
+                    *ngIf="experience.invalid && (experience.dirty || experience.touched) && experience.errors.required">
+                    Experience is required.
+                    
+                </div>
+
+                <div class="form-group alert alert-danger" role="alert"
+                    *ngIf="experience.invalid && (experience.dirty || experience.touched) && experience.errors.pattern">
+                    Experience should be numeric.
+                    
+                </div>
+
+
+                <div class="form-group alert alert-danger" role="alert"
+                    *ngIf="type.invalid && (type.dirty || type.touched) && type.errors.required">
+                    Type is required.
+                    
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-6" style="margin-top:40px; height: 275px; overflow-x:hidden;overflow-y:scroll" >
+            <table class="table">
+                <thead style="background-color: black;border-color: black;color: white;">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Experience</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of userData; index as i"
+                        [ngStyle]="{backgroundColor: i % 2  ? 'lightGrey' : 'darkGrey'}">
+                        <td>{{item.firstName}} </td>
+                        <td>{{item.experience}} </td>
+                        <td>{{item.type}} </td>
+                        <td><button class="btn" (click)="RemoveEmployee(i)"><i class="fa fa-close"></i></button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

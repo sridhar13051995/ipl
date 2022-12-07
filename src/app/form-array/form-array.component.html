@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form autocomplete="on" [formGroup]="todoForm" style="margin-top:20px">
+
+                <div class="form-group">
+                    <label class="font-weight-bold" for="Employee">To Do</label>
+                    <div class="row">
+                        <div class="col-md-6"> <input type="text"  formControlName="ToDoData" class="form-control" id="toDoData"></div>
+                        <div class="col-md-2"><button [disabled]="!todoForm.valid" (click)="add()" class="form-group btn btn-light"
+                            > <i class="fa fa-plus"></i></button></div>                           
+                    </div> 
+                    <div class="row" formArrayName="list">
+                        <div class="col-md-6">
+                            <ul class="list-group" style="margin-bottom: 2px;" *ngFor="let item of list.controls;let i=index">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                  {{item.value}}                                   
+                                  <span><button (click)="remove(i)" class="badge badge-primary badge-pill"
+                                    > <i class="fa fa-trash"></i></button></span>
+                                </li>                            
+                              </ul>
+                        </div>
+                       
+                    </div>                     
+                </div>  
+
+
+            </form>            
+        </div>        
+    </div>
+</div>

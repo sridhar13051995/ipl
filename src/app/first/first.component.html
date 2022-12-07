@@ -1,0 +1,23 @@
+<p>first works!</p>
+
+<div class="container">
+  <p>
+    <ngb-alert [dismissible]="true" *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true" >
+      <strong>Warning!</strong> Better check yourself, you're not looking too
+      good.
+    </ngb-alert>
+    <ngb-alert [dismissible]="true" *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true" >
+        <strong>Warning!</strong> Better check yourself, you're not looking too
+        good.
+      </ngb-alert>
+  </p>
+  <div class="row pb-4">
+    <input type="text" />
+  </div>
+  <div class="row pb-4">
+    <input type="text" />
+  </div>
+  <div class="row pb-4">
+    <button>Hello</button>
+  </div>
+</div>

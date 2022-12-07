@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+              <app-activitydy1form  (loadedData) = "AddedData($event)"></app-activitydy1form>  
+        </div>
+        <div class="col-md-6" style="margin-top:40px; height: 275px; overflow-x:hidden;overflow-y:scroll" >
+            <app-activitydy1list [userData]="dataFromParent"></app-activitydy1list>
+        </div>
+    </div>
+</div>

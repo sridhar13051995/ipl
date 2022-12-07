@@ -1,0 +1,20 @@
+<table class="table">
+    <thead style="background-color: black;border-color: black;color: white;">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Experience</th>
+            <th scope="col">Type</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of userData; index as i"
+            [ngStyle]="{backgroundColor: i % 2  ? 'lightGrey' : 'darkGrey'}">
+            <td>{{item.firstName}} </td>
+            <td>{{item.experience}} </td>
+            <td>{{item.type}} </td>
+            <td><button class="btn" (click)="RemoveEmployee(i)"><i class="fa fa-close"></i></button></td>
+        </tr>
+
+    </tbody>
+</table>

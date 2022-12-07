@@ -1,0 +1,32 @@
+<div class="container p-3 ">
+  <div class="row">  
+    <div class="col-md-12 p-3" >
+      <button class="btn btn-light" (click)= "Add()"><i class="fa fa-plus"></i> Add Product </button>
+    </div> 
+  </div>
+  
+  <div class="row">    
+    <div class="col-md-4 p-3 overflow-auto" *ngIf="!loading"  style="height: 350px;" >      
+      <div class="list-group">
+        <a routerLinkActive="active" class="list-group-item list-group-item-action" [routerLink]="['/product', item.id]"  (click)="!!datas(item.id)" *ngFor="let item of allProducts | async"> {{ item.name }}</a> 
+      </div>      
+    </div>
+    
+   
+    <div class="col-md-8 p-3" *ngIf="!loading">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12" style="text-align: center;height: 350px;"  *ngIf="loading">
+  <div class="spinner-border text-light" style="width: 5rem; height: 5rem;" role="status">
+ </div>
+</div>
+
+
+
+
+
+
+

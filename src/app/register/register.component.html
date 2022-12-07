@@ -1,0 +1,12 @@
+<div class="login-page">
+    <div class="form">
+        <div class="alert alert-danger" role="alert" *ngIf="showerror">
+            User Name already Exist
+          </div>
+        <input type="text" placeholder="name" [(ngModel)]="userData.name"/>
+        <input type="password" placeholder="password" [(ngModel)]="userData.password"/>
+        <input type="text" placeholder="admin/user" [(ngModel)]="userData.type"/>
+        <button (click)="register()">Register</button>  
+
+    </div>
+  </div>

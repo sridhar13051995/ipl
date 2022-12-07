@@ -1,0 +1,221 @@
+{
+    "posts": [
+      {
+        "id": 0,
+        "title": "First post!",
+        "content": "My first content!"
+      }
+    ],
+    "comments": [
+      {
+        "id": 0,
+        "content": "Wow such content!",
+        "username": "zero_cool"
+      }
+    ],
+    "ordersplaced": [
+      {
+        "userid": 1,
+        "prodid": 1,
+        "size": "M",
+        "name": "Cold fashion",
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412551/E-commerce%20landing%20page/products-showcase/product-1-img_3x.jpg",
+        "description": "Cold fashion",
+        "qty": 1,
+        "price": "5000",
+        "orderdate": "2020-10-14",
+        "deliverydate": "2020-10-14",
+        "status": "inprogress",
+        "address": "Address",
+        "id": 1
+      }
+    ],
+    "checkout": [
+      {
+        "userid": 1,
+        "prodid": 3,
+        "size": "M",
+        "name": "Casual Women fashion",
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/products-showcase/product-3-img_3x.jpg",
+        "description": "Casual Women fashion",
+        "qty": 2,
+        "price": "16100",
+        "id": 2
+      }
+    ],
+    "userdata": [
+      {
+        "name": "Rahman",
+        "id": 1,
+        "type": "admin",
+        "password": "z"
+      }
+    ],
+    "checkout1": [
+      {
+        "id": 1,
+        "userid": "1",
+        "prodid": "1",
+        "size": "xl",
+        "name": "Cold fashion",
+        "price": "5000",
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412551/E-commerce%20landing%20page/products-showcase/product-1-img_3x.jpg",
+        "description": "Cold fashion",
+        "qty": 2
+      }
+    ],
+    "products1": [
+      {
+        "name": "Monitors",
+        "price": "129",
+        "id": 1
+      },
+      {
+        "name": "Monitor Dell",
+        "price": "222",
+        "id": 2
+      },
+      {
+        "name": "Hp Desktop",
+        "price": "333",
+        "id": 3
+      },
+      {
+        "name": "Dell",
+        "price": "444",
+        "id": 4
+      },
+      {
+        "name": "Test",
+        "price": "322",
+        "id": 5
+      }
+    ],
+    "ekartproducts": [
+      {
+        "name": "Cold fashion",
+        "price": "5000",
+        "id": 1,
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412551/E-commerce%20landing%20page/products-showcase/product-1-img_3x.jpg",
+        "description": "Cold fashion"
+      },
+      {
+        "name": "Women fashion",
+        "price": "5050",
+        "id": 2,
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412546/E-commerce%20landing%20page/products-showcase/product-2-img_3x.jpg",
+        "description": "Women fashion"
+      },
+      {
+        "name": "Casual Women fashion",
+        "price": "8050",
+        "id": 3,
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/products-showcase/product-3-img_3x.jpg",
+        "description": "Casual Women fashion"
+      },
+      {
+        "name": "Men Tshirt",
+        "price": "650",
+        "id": 4,
+        "category": "tshirt",
+        "image": "https://res.cloudinary.com/de8cuyd0n/image/upload/v1520412550/E-commerce%20landing%20page/products-showcase/product-4-img_3x.jpg",
+        "description": "Men fashion"
+      }
+    ],
+    "products": [
+      {
+        "name": "Monitors",
+        "price": "129",
+        "id": 1,
+        "editable": false
+      },
+      {
+        "name": "Monitor Dell",
+        "price": "222",
+        "id": 2,
+        "editable": false
+      },
+      {
+        "name": "Hp Desktop",
+        "price": "333",
+        "id": 3,
+        "editable": false
+      },
+      {
+        "name": "Dell",
+        "price": "444",
+        "id": 4,
+        "editable": false
+      },
+      {
+        "name": "Test",
+        "price": "322",
+        "id": 5,
+        "editable": false
+      }
+    ],
+    "DataList": [
+      {
+        "id": 1,
+        "Employeename": "Ranjith vasudevan",
+        "Experience": 2,
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 2,
+        "Employeename": "Rahim sharif",
+        "Experience": 6,
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 3,
+        "Employeename": "Ashok",
+        "Experience": 13,
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 4,
+        "Employeename": "Balaji",
+        "Experience": 3,
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 5,
+        "Employeename": "Vijay",
+        "Experience": 11,
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 6,
+        "Employeename": "Gobinath",
+        "Experience": "2",
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 7,
+        "Employeename": "Selva",
+        "Experience": "6",
+        "Type": "Permanent",
+        "Field": "IT"
+      },
+      {
+        "id": 8,
+        "Employeename": "gobinath",
+        "Experience": "2",
+        "Type": "permanent",
+        "Field": "it"
+      }
+    ]
+  }
