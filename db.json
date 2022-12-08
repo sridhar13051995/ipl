@@ -95,6 +95,22 @@
       "deliverydate": "2021-03-19",
       "status": "Order Placed",
       "address": "Chennai"
+    },
+    {
+      "userid": 4,
+      "prodid": 1,
+      "size": "M",
+      "name": "CSK",
+      "category": "tshirt",
+      "image": "https://rukminim1.flixcart.com/image/495/594/k58hwnk0/kids-t-shirt/u/v/2/15-16-years-chennaisuperking-7bp-uniq-original-imafksq9n8pthj98.jpeg?q=50",
+      "description": "chennai Super Kings",
+      "qty": 2,
+      "price": "1000",
+      "id": 7,
+      "orderdate": "2022-12-07",
+      "deliverydate": "2022-12-17",
+      "status": "Order Placed",
+      "address": "Chennai"
     }
   ],
   "checkout": [
@@ -177,6 +193,12 @@
       "password": "1234567890",
       "type": "ADMIN",
       "id": 3
+    },
+    {
+      "name": "sridharm",
+      "password": "Pass1234@",
+      "type": "",
+      "id": 4
     }
   ],
   "checkout1": [

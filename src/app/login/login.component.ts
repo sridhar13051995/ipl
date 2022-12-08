@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       {
         if(data.length > 0)
         {
-          console.log('data', data)
+         
           let dataob = data.filter(data => data.name.trim().toLowerCase() == this.userData.name.toLowerCase() && data.password.toString().trim() == this.userData.password )
           console.log('dataob', dataob)
           if(dataob.length > 0)
